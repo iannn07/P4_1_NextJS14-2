@@ -1,5 +1,7 @@
 {
-    "cSpell.words": [
-        "Gausspy"
-    ]
+  "cSpell.words": ["Gausspy"],
+  "css.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
