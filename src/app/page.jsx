@@ -1,4 +1,6 @@
 import Feed from '@components/Feed';
+import { Suspense } from 'react';
+import Loading from './loading';
 
 const Home = () => {
   return (
@@ -16,7 +18,9 @@ const Home = () => {
         spells, but carefully crafted prompts. 🧙‍♂️
       </p>
 
-      <Feed />
+      <Suspense fallback={<Loading />}>
+        <Feed />
+      </Suspense>
     </section>
   );
 };
