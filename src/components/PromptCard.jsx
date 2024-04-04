@@ -6,7 +6,6 @@ import { useSession } from 'next-auth/react';
 import { usePathname, useRouter } from 'next/navigation';
 
 const PromptCard = ({
-  key,
   post,
   handleEdit,
   handleDelete,
@@ -57,8 +56,8 @@ const PromptCard = ({
           <Image
             src={
               copied === post.prompt
-                ? 'assets/icons/tick.svg'
-                : 'assets/icons/copy.svg'
+                ? '/assets/icons/tick.svg'
+                : '/assets/icons/copy.svg'
             }
             alt='copy_icon'
             width={12}
