@@ -45,7 +45,7 @@ const PromptCard = ({
 
           <div className='flex flex-col'>
             <h3 className='font-satoshi font-semibold text-gray-900'>
-              {post.creator.username}
+              {post.creator.name}
             </h3>
             <p className='font-inter text-sm text-gray-500'>
               {post.creator.email}
