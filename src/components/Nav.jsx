@@ -37,16 +37,16 @@ const Nav = () => {
             <Link href={'/create-prompt'} className='black_btn'>
               Create Post
             </Link>
-            <button type='button' onClick={signOut} className='outline_btn'>
+            <Link href={'/'} className='outline_btn' onClick={signOut}>
               Sign Out
-            </button>
+            </Link>
             <Link href={'/profile'}>
               <Image
                 src={session?.user.image}
                 alt='Profile'
                 width={37}
                 height={37}
-                className='rounded-full'
+                className='rounded-full border 1px border-black'
               />
             </Link>
           </div>
